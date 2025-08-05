@@ -18,3 +18,17 @@ storyteller-app/ ├── app.py ├── deepinfra_api.py ├── main.py �
    ```bash
    git clone https://github.com/yogesh45604/storyteller-app.git
    cd storyteller-app
+   
+
+Install Dependencies
+
+pip install -r requirements.txt
+Add your HUGGINGFACE API Key .env file
+
+api_key="HUGGINGFACE_API_KEY"
+Run Backend
+
+uvicorn main:app --reload 
+Run Frontend
+
+streamlit run app.py  
